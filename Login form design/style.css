@@ -10,6 +10,34 @@
     width: 100%;
     background: #009579;
   }
+
+  #login-form input[type="password"],
+  #login-form input[type="text"]{
+    width: 100%;
+    padding: 12px 36px 12px 12px;
+    box-sizing:border-box;
+  }
+
+  .password-container{
+    position: relative;
+  }
+
+  #showPass{
+    position: absolute;
+    color:#009579;
+    top: 45%;
+    right: 3%;
+    cursor: pointer;
+    height: 15px;
+    width: 20 px;
+  }
+  .fa-eye{
+    position: absolute;
+    color:#009579;
+    top: 50%;
+    right: 3%;
+    cursor: pointer;
+  }
   .container{
     position: absolute;
     top: 50%;

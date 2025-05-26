@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login & Registration Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 </head>
 <body>
     <div class="container">
@@ -14,14 +15,22 @@
                 <h3 style="text-align:center"><span style="color:blue; font-family:verdana">Techno</span><span style="color:Red; font-family:verdana">Art</span><span style="font-family:verdana"> Software</span></h3>
             </div>
             <!--<header>Login</header>-->
-            <form action="#">
+            <form action="#" method="POST" id="login-form">
                 <input type="text" placeholder="Enter your email...">
-                <input type="password" placeholder="Enter your password...">
+                <div class="password-container">
+                    <input type="password" value="mypassword" placeholder="Enter your password..." id="myPass">
+                    <span id="showPass">
+                        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                        <i class="fa-solid fa-eye" aria-hidden="true" style="display:none;"></i>
+                    </span>
+                </div>
                 <a href="#">Forgot Password</a>
                 <input type="button" class="button" value="Login">
             </form>
         </div>
       
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
